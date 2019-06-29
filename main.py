@@ -28,5 +28,5 @@ if __name__ == '__main__':
     
     # run our standalone gevent server
     dbmodel.Create()
-    connex_app.run(host='0.0.0.0', port=8282,threaded=True, debug=True)        # 0.0.0.0 allows all eth interfaces to access (localhost, 10.*.*.*)
+    connex_app.run(host='0.0.0.0', port=80, threaded=True, debug=True)        # 0.0.0.0 allows all eth interfaces to access (localhost, 10.*.*.*)
     
