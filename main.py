@@ -7,7 +7,6 @@ Created on May 11, 2019
 import os
 import connexion
 from flask_bootstrap import Bootstrap
-from flask_login import LoginManager
 import logging
 from models import dbmodel
 from controllers import ctrl_web
@@ -30,7 +29,7 @@ flask_app.config['BOOTSTRAP_SERVE_LOCAL'] = True
 #flask_app.templates_folder="web"
 
 connex_app.add_api('api/minis.yaml')
-connex_app.add_url_rule('/','index',ctrl_web.start)
+connex_app.add_url_rule('/minis','index',ctrl_web.start)
 
 
 
